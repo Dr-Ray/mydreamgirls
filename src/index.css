@@ -736,6 +736,14 @@ video {
   height: 150px;
 }
 
+.h-auto {
+  height: auto;
+}
+
+.max-h-\[150px\] {
+  max-height: 150px;
+}
+
 .min-h-\[650px\] {
   min-height: 650px;
 }
@@ -1187,6 +1195,10 @@ video {
 
   .md\:h-60 {
     height: 15rem;
+  }
+
+  .md\:h-auto {
+    height: auto;
   }
 
   .md\:w-1\/2 {
