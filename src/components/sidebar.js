@@ -10,22 +10,22 @@ const SideBar = ({overleyClose, sidebar}) => {
                         <h3 className="text-2xl font-bold">DreamGirls</h3>
                     </div>
                     <li>
-                        <Link to="/#" className="text-base hover:text-blue-500">PLay now</Link>
+                        <Link to="/#" className="font-bold text-xl hover:text-blue-500">PLay now</Link>
                     </li>
                     <li>
-                        <Link to="/#" className="text-base hover:text-blue-500">Design</Link>
+                        <Link to="/#" className="font-bold text-xl hover:text-blue-500">Design</Link>
                     </li> 
                     <li>
-                        <Link to="/#" className="text-base hover:text-blue-500">Store</Link>
+                        <Link to="/#" className="font-bold text-xl hover:text-blue-500">Store</Link>
                     </li>
                     <li>
-                        <Link to="/#" className="text-base hover:text-blue-500">Join the Community</Link>
+                        <Link to="/#" className="font-bold text-xl hover:text-blue-500">Join the Community</Link>
                     </li>
                     <li>
-                        <Link to="/games" className="text-base hover:text-blue-500">Games</Link>
+                        <Link to="/games" className="font-bold text-xl hover:text-blue-500">Games</Link>
                     </li>
                     <li>
-                        <Link to="/#" className="text-base">Language</Link>
+                        <Link to="/#" className="font-bold text-xl">Language</Link>
                     </li>
                 </ul>
             </div>

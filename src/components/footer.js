@@ -8,19 +8,19 @@ const Footer = () => {
             <div className='pt-11'>
                 <ul className='flex flex-row flex-wrap gap-2'>
                     <li className='w-1/3 md:w-1/4 mb-8'>
-                        <Link to='/#' className='text-white font-bold hover:text-purple-600 transition-colors p-2 text-2xl'>Play now</Link>
+                        <Link to='/#' className='text-white font-bold hover:text-purple-600 transition-colors p-2 text-xl'>Play now</Link>
                     </li>
                     <li className='w-1/3 md:w-1/4 mb-8'>
-                        <Link to='/#' className='text-white font-bold hover:text-purple-600 transition-colors p-2 text-2xl'>Design</Link>
+                        <Link to='/#' className='text-white font-bold hover:text-purple-600 transition-colors p-2 text-xl'>Design</Link>
                     </li>
                     <li className='w-1/3 md:w-1/4 mb-8'>
-                        <Link to='/#' className='text-white font-bold hover:text-purple-600 transition-colors p-2 text-2xl'>Store</Link>
+                        <Link to='/#' className='text-white font-bold hover:text-purple-600 transition-colors p-2 text-xl'>Store</Link>
                     </li>
                     <li className='w-1/3 md:w-1/4 mb-8'>
-                        <Link to='/#' className='text-white font-bold hover:text-purple-600 transition-colors p-2 text-2xl'>Community</Link>
+                        <Link to='/#' className='text-white font-bold hover:text-purple-600 transition-colors p-2 text-xl'>Community</Link>
                     </li>
                     <li className='w-1/3 md:w-1/4 mb-8'>
-                        <Link to='/games' className='text-white font-bold hover:text-purple-600 transition-colors p-2 text-2xl'>Games</Link>
+                        <Link to='/games' className='text-white font-bold hover:text-purple-600 transition-colors p-2 text-xl'>Games</Link>
                     </li>
                 </ul>
             </div>
