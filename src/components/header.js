@@ -13,11 +13,11 @@ const Header = () => {
     }, []);
 
     useEffect(() => {
-            openbar.current.onclick = (e) => {
+        openbar.current.onclick = (e) => {
             sidebar.current.classList.toggle('sidebar-open');
             overleyClose.current.classList.toggle('ovr-open');
         }
-            overleyClose.current.onclick = (e) => {
+        overleyClose.current.onclick = (e) => {
             sidebar.current.classList.toggle('sidebar-open');
             overleyClose.current.classList.toggle('ovr-open');
         }
@@ -55,7 +55,7 @@ const Header = () => {
                 </nav>
                 <div className='banner bg-pink-300 min-h-screen absoute top-0 w-full pt-24 pb-4 px-2 bg-no-repeat bg-contain md:bg-cover flex flex-col justify-center md:flex-row md:items-center'>
                     <h1 className='font-bold text-5xl md:text-6xl lg:text-8xl md:w-1/2'>BEST DREAM LIFE MEET OUR AVATARS</h1>
-                    <div className='h-full bg-purle-600 md:w-1/2 bg-no-repeat bg-cover bg-center' style={{backgroundImage:"url('/images/df-removebg-preview.png')"}} >
+                    <div className='h-full bg-purle-600 md:w-1/2 bg-no-repeat bg-cover bg-center' style={{ backgroundImage: "url('/images/df-removebg-preview.png')" }} >
                         <div className="relative mt-4 overflow-hidden w-full" style={{ height: "500px" }}>
                             <div className="w-600 m-auto relative overflow-hidden h-full flex">
                                 <div className="overflow-hidden">
@@ -93,7 +93,7 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            <SideBar overleyClose={overleyClose} sidebar={sidebar}/>
+            <SideBar overleyClose={overleyClose} sidebar={sidebar} />
         </>
     )
 }
