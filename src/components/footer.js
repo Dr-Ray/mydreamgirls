@@ -6,19 +6,19 @@ const Footer = () => {
             <h1 className='my-5 text-5xl font-bold'>DreamGirls</h1>
             <div className='pt-11'>
                 <ul className='flex flex-row flex-wrap gap-2'>
-                    <li className='w-1/3 md:w-1/4 mb-10'>
+                    <li className='w-1/3 md:w-1/4 mb-8'>
                         <a href='#' className='text-white font-bold hover:text-purple-600 transition-colors p-2 text-2xl'>Play now</a>
                     </li>
-                    <li className='w-1/3 md:w-1/4 mb-10'>
+                    <li className='w-1/3 md:w-1/4 mb-8'>
                         <a href='#' className='text-white font-bold hover:text-purple-600 transition-colors p-2 text-2xl'>Design</a>
                     </li>
-                    <li className='w-1/3 md:w-1/4 mb-10'>
+                    <li className='w-1/3 md:w-1/4 mb-8'>
                         <a href='#' className='text-white font-bold hover:text-purple-600 transition-colors p-2 text-2xl'>Store</a>
                     </li>
-                    <li className='w-1/3 md:w-1/4 mb-10'>
+                    <li className='w-1/3 md:w-1/4 mb-8'>
                         <a href='#' className='text-white font-bold hover:text-purple-600 transition-colors p-2 text-2xl'>Community</a>
                     </li>
-                    <li className='w-1/3 md:w-1/4 mb-10'>
+                    <li className='w-1/3 md:w-1/4 mb-8'>
                         <a href='#' className='text-white font-bold hover:text-purple-600 transition-colors p-2 text-2xl'>Games</a>
                     </li>
                 </ul>
@@ -52,16 +52,16 @@ const Footer = () => {
                     lorem ipsum dolor set lorem ipsum dolor set lorem ipsum dolor set 
                 </p>
                 <ul className='flex flex-row flex-wrap gap-4'>
-                    <li className=''>
+                    <li>
                         <a href='#' className='text-white font-bold hover:text-purple-600 transition-colors'>Play now</a>
                     </li>
-                    <li className=''>
+                    <li>
                         <a href='#' className='text-white font-bold hover:text-purple-600 transition-colors'>Design</a>
                     </li>
-                    <li className=''>
+                    <li>
                         <a href='#' className='text-white font-bold hover:text-purple-600 transition-colors'>Store</a>
                     </li>
-                    <li className=''>
+                    <li>
                         <a href='#' className='text-white font-bold hover:text-purple-600 transition-colors'>Community</a>
                     </li>
                 </ul>

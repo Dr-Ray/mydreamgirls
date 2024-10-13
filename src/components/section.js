@@ -2,10 +2,11 @@ import React from 'react'
 
 const Section = () => {
     return (
-        <div className=''>
+        <div>
             <div className='h-[700px] md:h-[600px] flex flex-col md:flex-col lg:flex-row gap-2 py-4 px-4 items-center bg-purple-600 bg-no-repeat bg-contain md:bg-cover'>
                 <div className='w-full md:w-[600px] mx-auto h-80 md:h-[400px] rounded-lg p-2'>
                     <iframe className='w-full h-full rounded-lg'
+                        title='embeded image'
                         src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
                     </iframe>
                 </div>
@@ -87,12 +88,12 @@ const Section = () => {
                     </div> */}
                 </div>
             </div>
-            <div className='h-[500px] mx-auto flex flex-col md:flex-col lg:flex-row gap-2 py-3 px-4 items-center' style={{}}>
-                <div className='w-full lg:w-1/2 h-[300px] md:h-[250px] mx-auto rounded-lg px-4 py-5  bg-purple-500'>
-                    <h2 class="uppercase text-4xl font-bold">
+            <div className='h-[500px] mx-auto flex flex-col md:flex-col lg:flex-row gap-2 py-3 px-4 items-center bg-purple-600 ' style={{}}>
+                <div className='w-full lg:w-1/2 h-[300px] md:h-[250px] mx-auto rounded-lg px-4 py-5' style={{backgroundImage:"linear-gradient(rgba(147 51 234 / var(--tw-bg-opacity)),(147 51 234 / var(--tw-bg-opacity)))"}}>
+                    <h2 class="uppercase text-4xl font-bold text-white">
                         Join our community
                     </h2>
-                    <p className='my-10 font-semibold'>
+                    <p className='my-10 font-semibold text-slate-200'>
                         Discuss everything and anything with people on the platform
                     </p>
                     <a href='#'>
@@ -100,10 +101,10 @@ const Section = () => {
                     </a>
                 </div>
                 <div className='w-full lg:w-1/2 h-[300px] md:h-[250px] mx-auto rounded-lg px-2 bg-purple-500'>
-                    <h2 class="uppercase text-4xl font-bold">
+                    <h2 class="uppercase text-4xl font-bold text-white">
                         Need help.
                     </h2>
-                    <p className='my-10 font-semibold'>
+                    <p className='my-10 font-semibold text-slate-200'>
                         Get answers and help from our customer service
                     </p>
                     <a href='#'>

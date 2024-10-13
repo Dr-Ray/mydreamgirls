@@ -37,16 +37,16 @@ const Header = () => {
                             <div className="w-600 m-auto relative overflow-hidden h-full flex">
                                 <div className="overflow-hidden">
                                     <div className="sldr ch-bg">
-                                        <img src="./images/WhatsApp_Image_2024-07-20_at_07.25.41-removebg-preview.png" alt="" />
+                                        <img src="/images/WhatsApp_Image_2024-07-20_at_07.25.41-removebg-preview.png" alt="" />
                                     </div>
                                     <div className="sldr ch-bg-2">
-                                        <img src="./images/WhatsApp_Image_2024-07-20_at_07.25.41-removebg-preview.png" alt=" " />
+                                        <img src="/images/WhatsApp_Image_2024-07-20_at_07.25.41-removebg-preview.png" alt=" " />
                                     </div>
                                     <div className="sldr ch-bg-3">
-                                        <img src="./images/WhatsApp_Image_2024-07-20_at_07.25.41-removebg-preview.png" alt="" />
+                                        <img src="/images/WhatsApp_Image_2024-07-20_at_07.25.41-removebg-preview.png" alt="" />
                                     </div>
                                     <div className="sldr ch-bg-4">
-                                        <img src="./images/WhatsApp_Image_2024-07-20_at_07.25.41-removebg-preview.png" alt="" />
+                                        <img src="/images/WhatsApp_Image_2024-07-20_at_07.25.41-removebg-preview.png" alt="" />
                                     </div>
                                 </div>
                             </div>

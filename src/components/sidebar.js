@@ -9,7 +9,7 @@ const SideBar = () => {
                         <h3 className="text-2xl font-bold">DreamGirls</h3>
                     </div>
                     <li>
-                        <a href="./avatar/" className="text-base hover:text-blue-500">Create Your Avatar</a>
+                        <a href="#" className="text-base hover:text-blue-500">Create Your Avatar</a>
                     </li>
                     <li>
                         <a href="#" className="text-base hover:text-blue-500">Explore Worlds</a>
@@ -21,7 +21,7 @@ const SideBar = () => {
                         <a href="#" className="text-base hover:text-blue-500">Join the community</a>
                     </li>
                     <li>
-                        <a href="./Games/" className="text-base hover:text-blue-500">Play Games</a>
+                        <a href="#" className="text-base hover:text-blue-500">Play Games</a>
                     </li>
                     <li>
                         <a href="#" className="text-base">Language</a>
