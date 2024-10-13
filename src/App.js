@@ -1,13 +1,9 @@
-import Footer from "./components/footer";
-import Header from "./components/header";
-import Section from "./components/section";
+import LandingPage from "./screens/landing";
 
 function App() {
   return (
     <>
-      <Header />
-      <Section />
-      <Footer />
+      <LandingPage />
     </>
   );
 }

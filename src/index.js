@@ -1,13 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './custom.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import LandingPage from './screens/landing';
+import GameScreen from './screens/games';
+import DashBoard from './screens/dashboard';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <LandingPage />,
+  },
+  {
+    path: "/games",
+    element: <GameScreen />
+  },
+  {
+    path: "/dashboard",
+    element: <DashBoard />
+  }
+]);
+
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-reportWebVitals();
+    <RouterProvider router={router} />
+  </React.StrictMode>,
+)

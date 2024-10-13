@@ -1,7 +1,27 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import SideBar from './sidebar'
+import aos from 'aos';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
+    const sidebar = useRef(null);
+    const openbar = useRef(null);
+    const overleyClose = useRef(null);
+
+    useEffect(() => {
+        aos.init();
+    }, []);
+
+    useEffect(() => {
+            openbar.current.onclick = (e) => {
+            sidebar.current.classList.toggle('sidebar-open');
+            overleyClose.current.classList.toggle('ovr-open');
+        }
+            overleyClose.current.onclick = (e) => {
+            sidebar.current.classList.toggle('sidebar-open');
+            overleyClose.current.classList.toggle('ovr-open');
+        }
+    }, []);
     return (
         <>
             <header className='relative'>
@@ -11,22 +31,25 @@ const Header = () => {
                     </div>
                     <ul className='md:flex md:flex-row gap-2 hidden'>
                         <li>
-                            <a href='#' className='font-bold hover:text-purple-600 transition-colors drop-shadow-lg p-2 rounded-3xl'>Play now</a>
+                            <Link to='/#' className='font-bold hover:text-purple-600 transition-colors p-2 rounded-3xl'>Play now</Link>
                         </li>
                         <li>
-                            <a href='#' className='font-bold hover:text-purple-600 transition-colors drop-shadow-lg p-2 rounded-3xl'>Design</a>
+                            <Link to='/#' className='font-bold hover:text-purple-600 transition-colors p-2 rounded-3xl'>Design</Link>
                         </li>
                         <li>
-                            <a href='#' className='font-bold hover:text-purple-600 transition-colors drop-shadow-lg p-2 rounded-3xl'>Store</a>
+                            <Link to='/#' className='font-bold hover:text-purple-600 transition-colors p-2 rounded-3xl'>Store</Link>
                         </li>
                         <li>
-                            <a href='#' className='font-bold hover:text-purple-600 transition-colors drop-shadow-lg p-2 rounded-3xl'>Community</a>
+                            <Link to='/#' className='font-bold hover:text-purple-600 transition-colors p-2 rounded-3xl'>Join the Community</Link>
                         </li>
                         <li>
-                            <a href='#' className='font-bold hover:text-purple-600 transition-colors drop-shadow-lg p-2 rounded-3xl'>Games</a>
+                            <Link to='/games' className='font-bold hover:text-purple-600 transition-colors p-2 rounded-3xl'>Games</Link>
+                        </li>
+                        <li>
+                            <Link to='/#' className='font-bold hover:text-purple-600 transition-colors p-2 rounded-3xl'>Language</Link>
                         </li>
                     </ul>
-                    <div className='font-bold cursor-pointer text-3xl md:hidden'>
+                    <div className='font-bold cursor-pointer text-3xl md:hidden' ref={openbar}>
                         &#9776;
                     </div>
                 </nav>
@@ -40,7 +63,7 @@ const Header = () => {
                                         <img src="/images/WhatsApp_Image_2024-07-20_at_07.25.41-removebg-preview.png" alt="" />
                                     </div>
                                     <div className="sldr ch-bg-2">
-                                        <img src="/images/WhatsApp_Image_2024-07-20_at_07.25.41-removebg-preview.png" alt=" " />
+                                        <img src="/images/WhatsApp_Image_2024-07-20_at_07.25.41-removebg-preview.png" alt="" />
                                     </div>
                                     <div className="sldr ch-bg-3">
                                         <img src="/images/WhatsApp_Image_2024-07-20_at_07.25.41-removebg-preview.png" alt="" />
@@ -56,7 +79,7 @@ const Header = () => {
                                         <i className="fa fa-arrow-left"></i>
                                     </span>
                                     <div className="h-full flex justify-center w-80 items-center overflow-x-auto gap-3">
-                                        <img src="/images/WhatsApp_Image_2024-07-20_at_07.29.43__9_-removebg-preview.png" className='cursor-pointer h-12 object-cover w-12 rounded-full object-top border border-black' />
+                                        <img src="/images/WhatsApp_Image_2024-07-20_at_07.29.43__9_-removebg-preview.png" alt='' className='cursor-pointer h-12 object-cover w-12 rounded-full object-top border border-black' />
                                         <img src="/images/WhatsApp_Image_2024-07-20_at_07.29.43__8_-removebg-preview.png" alt="" className='cursor-pointer h-12 object-cover w-12 rounded-full object-top border border-black' />
                                         <img src="/images/WhatsApp_Image_2024-07-20_at_07.29.43__7_-removebg-preview.png" alt="" className='cursor-pointer h-12 object-cover w-12 rounded-full object-top border border-black' />
                                         <img src="/images/WhatsApp_Image_2024-07-20_at_07.29.43__6_-removebg-preview.png" alt="" className='cursor-pointer h-12 object-cover w-12 rounded-full object-top border border-black' />
@@ -70,7 +93,7 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            <SideBar />
+            <SideBar overleyClose={overleyClose} sidebar={sidebar}/>
         </>
     )
 }

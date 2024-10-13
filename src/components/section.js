@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Section = () => {
     return (
@@ -96,9 +97,9 @@ const Section = () => {
                     <p className='my-10 font-semibold text-slate-200'>
                         Discuss everything and anything with people on the platform
                     </p>
-                    <a href='#'>
+                    <Link to='/#'>
                         Join now
-                    </a>
+                    </Link>
                 </div>
                 <div className='w-full lg:w-1/2 h-[300px] md:h-[250px] mx-auto rounded-lg px-2 bg-purple-500'>
                     <h2 class="uppercase text-4xl font-bold text-white">
@@ -107,9 +108,9 @@ const Section = () => {
                     <p className='my-10 font-semibold text-slate-200'>
                         Get answers and help from our customer service
                     </p>
-                    <a href='#'>
+                    <Link to='/#'>
                         Contact us
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

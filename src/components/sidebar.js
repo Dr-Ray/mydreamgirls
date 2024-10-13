@@ -1,34 +1,35 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const SideBar = () => {
+const SideBar = ({overleyClose, sidebar}) => {
     return (
         <>
-            <div id="sidebar" className="md:hidden overflow-hidden visible z-50 h-full fixed w-72 top-0 right-[-300px] transition-all text-white">
+            <div id="sidebar" className="md:hidden overflow-hidden visible z-50 h-full fixed w-72 top-0 right-[-300px] transition-all text-white" ref={sidebar}>
                 <ul className="h-full px-3 flex flex-col gap-4 py-4">
                     <div className="mb-10">
                         <h3 className="text-2xl font-bold">DreamGirls</h3>
                     </div>
                     <li>
-                        <a href="#" className="text-base hover:text-blue-500">Create Your Avatar</a>
+                        <Link to="/#" className="text-base hover:text-blue-500">PLay now</Link>
                     </li>
                     <li>
-                        <a href="#" className="text-base hover:text-blue-500">Explore Worlds</a>
+                        <Link to="/#" className="text-base hover:text-blue-500">Design</Link>
+                    </li> 
+                    <li>
+                        <Link to="/#" className="text-base hover:text-blue-500">Store</Link>
                     </li>
                     <li>
-                        <a href="#" className="text-base hover:text-blue-500">Shop Fashion</a>
+                        <Link to="/#" className="text-base hover:text-blue-500">Join the Community</Link>
                     </li>
                     <li>
-                        <a href="#" className="text-base hover:text-blue-500">Join the community</a>
+                        <Link to="/games" className="text-base hover:text-blue-500">Games</Link>
                     </li>
                     <li>
-                        <a href="#" className="text-base hover:text-blue-500">Play Games</a>
-                    </li>
-                    <li>
-                        <a href="#" className="text-base">Language</a>
+                        <Link to="/#" className="text-base">Language</Link>
                     </li>
                 </ul>
             </div>
-            <div className="fixed z-10 h-0 w-0 top-0" id="cl-sidebar"></div>
+            <div className="fixed z-10 h-0 w-0 top-0" id="cl-sidebar"  ref={overleyClose}></div>
         </>
     )
 }
