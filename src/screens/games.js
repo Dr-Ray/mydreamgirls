@@ -9,7 +9,7 @@ const GameScreen = () => {
         <h1 className='text-center text-xl font-semibold'>Games</h1>
         <div></div>
       </div>
-      <div className='flex flex-row gap-4 md:w-[600px] px-4'>
+      <Link to="/games/pacman" className='flex flex-row gap-4 md:w-[600px] px-4'>
         <div className='rounded-lg h-[200px] md:h-[300px] w-1/2 md:w-[400px] bg-purple-500 overflow-hidden '>
           <img alt='' src='/images/giphy.gif' className='h-full md:h-auto w-full object-cover' />
         </div>
@@ -19,7 +19,7 @@ const GameScreen = () => {
           <p className='text-sm font-medium mb-4'>Game shackles</p>
           <button className='rounded-full bg-green-800 text-white font-semibold px-10 py-1'>Play</button>
         </div>
-      </div>
+      </Link>
 
       <div className='px-4 w-full'>
         <div className='my-6 h-60 w-full rounded-lg bg-black'>Banner (Advert)</div>

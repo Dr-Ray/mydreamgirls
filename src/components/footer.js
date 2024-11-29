@@ -25,21 +25,21 @@ const Footer = () => {
                 </ul>
             </div>
             <div className='w-full'>
-                <ul class="flex flex-row gap-4">
-                    <li class="">
-                        <Link class="" to="/#"><i class="fab fa-1x fa-facebook-f text-blue-400"></i></Link>
+                <ul className="flex flex-row gap-4">
+                    <li className="">
+                        <Link className="" to="/#"><i className="fab fa-1x fa-facebook-f text-blue-400"></i></Link>
                     </li>
-                    <li class="">
-                        <Link class="" to="/#"><i class="fab fa-1x fa-twitter text-blue-400"></i></Link>
+                    <li className="">
+                        <Link className="" to="/#"><i className="fab fa-1x fa-twitter text-blue-400"></i></Link>
                     </li>
-                    <li class="">
-                        <Link class="" to="/#"><i class="fab fa-1x fa-linkedin-in text-blue-400"></i></Link>
+                    <li className="">
+                        <Link className="" to="/#"><i className="fab fa-1x fa-linkedin-in text-blue-400"></i></Link>
                     </li>
-                    <li class="">
-                        <Link class="" to="/#"><i class="fab fa-1x fa-instagram text-orange-400"></i></Link>
+                    <li className="">
+                        <Link className="" to="/#"><i className="fab fa-1x fa-instagram text-orange-400"></i></Link>
                     </li>
-                    <li class="">
-                        <Link class="" to="/#"><i class="fab fa-1x fa-youtube text-red-400"></i></Link>
+                    <li className="">
+                        <Link className="" to="/#"><i className="fab fa-1x fa-youtube text-red-400"></i></Link>
                     </li>
                 </ul>
             </div>

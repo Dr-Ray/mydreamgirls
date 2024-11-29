@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 
 const WhackaMole = () => {
+  const  canvasRef = useRef(null);
+  useEffect(()=> {
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext('2d');
+
+    ctx.fillStyle = "#ff0000";
+    ctx.fillRect(20, 20, 200, 300);
+
+  }, []);
   return (
-    <div>WhackaMole</div>
+    <canvas ref={canvasRef}>Pacman</canvas>
   )
 }
 

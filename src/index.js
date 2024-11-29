@@ -10,6 +10,10 @@ import {
 import LandingPage from './screens/landing';
 import GameScreen from './screens/games';
 import DashBoard from './screens/dashboard';
+import Pacman from './games/pacman';
+import WhackaMole from './games/whackamole';
+import JumpingJack from './games/jumpingJack';
+import Register from './screens/register';
 
 const router = createBrowserRouter([
   {
@@ -17,8 +21,24 @@ const router = createBrowserRouter([
     element: <LandingPage />,
   },
   {
+    path: "/register",
+    element: <Register />,
+  },
+  {
     path: "/games",
     element: <GameScreen />
+  },
+  {
+    path: "/games/pacman",
+    element: <Pacman />
+  },
+  {
+    path: "/games/whackamole",
+    element: <WhackaMole />
+  },
+  {
+    path: "/games/jumpingjack",
+    element: <JumpingJack />
   },
   {
     path: "/dashboard",
