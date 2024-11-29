@@ -29,17 +29,17 @@ function Controller (pacman) {
     window.addEventListener("keydown", (e) => {
         let k = e.key;
         setTimeout(() => {
-            if (k == "ArrowLeft" || k == "a") {
+            if (k === "ArrowLeft" || k === "a") {
                 // left arrow or a
                 console.log("sdsd")
                 pacman.x -= 3;
-            } else if (k == "ArrowUp" || k == "w") {
+            } else if (k === "ArrowUp" || k === "w") {
                 // up arrow or w
                 pacman.y -= 3;
-            } else if (k == "ArrowRight" || k == "d") {
+            } else if (k === "ArrowRight" || k === "d") {
                 // right arrow or d
                 pacman.x += 3;
-            } else if (k == "ArrowDown" || k == "s") {
+            } else if (k === "ArrowDown" || k === "s") {
                 // bottom arrow or s
                 pacman.y += 3;
             }

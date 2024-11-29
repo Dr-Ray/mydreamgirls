@@ -35,7 +35,6 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         if(handleError()) {
-            console.log("Sending...")
             // let res = await fetch('url', {
             //     method:"POST",
             //     body:JSON.stringify({
@@ -43,6 +42,13 @@ const Register = () => {
             //     })
             // });
             // let response = await res.json();
+            await fetch('url', {
+                method:"POST",
+                body:JSON.stringify({
+                    name, age, password, avatar
+                })
+            });
+            // await res.json();
         }else{
             return;
         }

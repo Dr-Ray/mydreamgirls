@@ -27,7 +27,7 @@ const GameScreen = () => {
 
       <div>
         <h2 className='font-bold px-4 mb-4'>Top three games</h2>
-        <div className='flex flex-row gap-4 md:w-[600px] px-4 mb-4'>
+        <Link to="/games/pacman" className='flex flex-row gap-4 md:w-[600px] px-4 mb-4'>
           <div className='rounded-lg h-[200px] md:h-60 w-2/3 md:w-[400px] bg-purple-500 overflow-hidden'>
             <img alt='' src='/images/giphy.gif' className='h-full md:h-auto w-full object-cover' />
           </div>
@@ -37,8 +37,8 @@ const GameScreen = () => {
             <p className='text-sm font-medium mb-2'>Game shackles</p>
             <button className='rounded-lg border border-green-800 text-green-800 font-semibold px-10 py-1'>Play</button>
           </div>
-        </div>
-        <div className='flex flex-row gap-4 md:w-[600px] px-4 mb-4'>
+        </Link>
+        <Link to="/games/whackamole" className='flex flex-row gap-4 md:w-[600px] px-4 mb-4'>
           <div className='rounded-lg h-[200px] md:h-h-60 w-2/3 md:w-[400px] bg-purple-500 overflow-hidden'>
             <img alt='' src='/images/whac-a-mole.gif' className='h-full md:h-auto w-full object-cover' />
           </div>
@@ -48,8 +48,8 @@ const GameScreen = () => {
             <p className='text-sm font-medium mb-2'>Game shackles</p>
             <button className='rounded-lg border border-green-800 text-green-800 font-semibold px-10 py-1'>Play</button>
           </div>
-        </div>
-        <div className='flex flex-row gap-4 md:w-[600px] px-4 mb-4'>
+        </Link>
+        <Link to="/games/jumpingjack" className='flex flex-row gap-4 md:w-[600px] px-4 mb-4'>
           <div className='rounded-lg h-[200px] md:h-h-60 w-2/3 md:w-[400px] bg-purple-500 overflow-hidden'>
             <img alt='' src='/images/giphy1.gif' className='h-full md:h-auto w-full object-cover' />
           </div>
@@ -59,7 +59,7 @@ const GameScreen = () => {
             <p className='text-sm font-medium mb-2'>Game shackles</p>
             <button className='rounded-lg border border-green-800 text-green-800 font-semibold px-10 py-1'>Play</button>
           </div>
-        </div>
+        </Link>
       </div>
 
       <div>

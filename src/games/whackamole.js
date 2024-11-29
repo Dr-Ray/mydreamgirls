@@ -1,18 +1,18 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useState } from 'react';
+import StartPlay from './startPlay';
+import WhackaMoleGameScreen from './components/whackamole/gamescreen';
 
-const WhackaMole = () => {
-  const  canvasRef = useRef(null);
-  useEffect(()=> {
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
-
-    ctx.fillStyle = "#ff0000";
-    ctx.fillRect(20, 20, 200, 300);
-
-  }, []);
-  return (
-    <canvas ref={canvasRef}>Pacman</canvas>
-  )
+const WhackAMole = () => {
+  const [play, setPlay] = useState(true);
+  if (play) {
+    return (
+      <WhackaMoleGameScreen />
+    )
+  } else {
+    return (
+      <StartPlay name={'Whack-A-Mole'} img='/images/giphy.gif' setPlay={setPlay}/>
+    )
+  }
 }
 
-export default WhackaMole
+export default WhackAMole
